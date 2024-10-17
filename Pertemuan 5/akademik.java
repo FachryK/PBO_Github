@@ -116,31 +116,30 @@ public class akademik {
         mahasiswaList[8] = new Mahasiswa("Alqan", 19, "231511066");
         mahasiswaList[9] = new Mahasiswa("Afrija", 19, "231511065");
         
-        MataKuliah mk1 = new MataKuliah("MK101", "Fisika Dasar");
-        MataKuliah mk2 = new MataKuliah("MK102", "Matematika");
-        MataKuliah mk3 = new MataKuliah("MK103", "Pemrograman");
+        MataKuliah mk1 = new MataKuliah("21IF2015", "Komputer Grafik");
+        MataKuliah mk2 = new MataKuliah("21IF2014", "Aljabar Linear");
+        MataKuliah mk3 = new MataKuliah("21IF2016", "Proyek 3");
+        MataKuliah mk4 = new MataKuliah("21IF2011", "Pemrograman Berbasis Objek");
+        MataKuliah mk5 = new MataKuliah("21IF2012", "Basis Data");
         
         Dosen[] dosenList = new Dosen[10];
-        dosenList[0] = new Dosen("Zulkifli", 45, "01", mk1);
-        dosenList[1] = new Dosen("Ade", 40, "02", mk2);
-        dosenList[2] = new Dosen("Muhammad Rizai", 38, "03", mk3);
-        dosenList[3] = new Dosen("Santi", 38, "04", mk1);
-        dosenList[4] = new Dosen("Irwan", 38, "05", mk2);
-        dosenList[5] = new Dosen("IrTham", 38, "06", mk3);
-        dosenList[6] = new Dosen("Ade Hodijah", 38, "07", mk1);
-        dosenList[7] = new Dosen("Yadhi", 38, "08", mk2);
-        dosenList[8] = new Dosen("Yudi", 38, "09", mk3);
-        dosenList[9] = new Dosen("Supri", 38, "10", mk1);
+        dosenList[0] = new Dosen("Yudi Widhiyasana ", 45, "KO013N", mk1);
+        dosenList[1] = new Dosen("Muhammad Rizqi S", 40, "KO074N", mk2);
+        dosenList[2] = new Dosen("Trisna Gelar A", 38, "KO078N", mk3);
+        dosenList[3] = new Dosen("Zulkifli Arsyad", 38, "KO061N", mk4);
+        dosenList[4] = new Dosen("Ade Hodijah", 38, "KO060N", mk5);
 
-        Ruangan r1 = new Ruangan("R101", "Ruang Kuliah 1");
-        Ruangan r2 = new Ruangan("R102", "Ruang Kuliah 2");
+        Ruangan r1 = new Ruangan("D217-Kelas", "D217");
+        Ruangan r2 = new Ruangan("D101-Kelas", "D101");
+        Ruangan r3 = new Ruangan("D102-Lab. MT", "Lab MT");
+        Ruangan r4 = new Ruangan("D106-Lab. SDB", "Lab SDB");
         
         Jadwal[] jadwalList = new Jadwal[5];
         jadwalList[0] = new Jadwal("Senin", mk1, r1, dosenList[0]);
         jadwalList[1] = new Jadwal("Selasa", mk2, r2, dosenList[1]);
-        jadwalList[2] = new Jadwal("Rabu", mk3, r1, dosenList[2]);
-        jadwalList[3] = new Jadwal("Kamis", mk1, r2, dosenList[3]);
-        jadwalList[4] = new Jadwal("Jumat", mk2, r1, dosenList[4]);
+        jadwalList[2] = new Jadwal("Rabu", mk3, r3, dosenList[2]);
+        jadwalList[3] = new Jadwal("Kamis", mk4, r4, dosenList[3]);
+        jadwalList[4] = new Jadwal("Jumat", mk5, r4, dosenList[4]);
 
         System.out.println("Data Mahasiswa:");
         for (Mahasiswa mhs : mahasiswaList) {
