@@ -24,9 +24,9 @@ public class Staff
          "555-8374");
       staffList[5] = new Volunteer ("Cliff", "321 Duds Lane",
          "555-7282");
-      staffList[6] = new Commision("Wildan", "Sukajadi", "089874893", "00000", 6.25, 0.20);
+      staffList[6] = new Commision("Fachry", "Sukajadi", "089874893", "00000", 6.25, 0.20);
 
-      staffList[7] = new Commision("ALvito", "Cimahi", "0999", "0888", 9.75, 0.15);
+      staffList[7] = new Commision("Ojan", "Cimahi", "0999", "0888", 9.75, 0.15);
 
       ((Executive)staffList[0]).awardBonus (500.00);
 
